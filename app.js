@@ -11,7 +11,7 @@ const upload = multer({storage:storageStrategy})
 app.use(express.json())
 
 app.get('/', function(req,res){
-    res.send('Hola Mundo!!!')
+    res.send('Segunda Rama del repositorio')
 })
 
 app.post('/imagen', upload.single('imagen'),async function(req,res) {
